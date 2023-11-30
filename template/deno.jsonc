@@ -1,0 +1,29 @@
+{
+  "imports": {
+    // The dollar sign in front of "std" isn't special - it's an optional
+    // convention to show that $std is an alias set up in an import map
+    "$std/": "https://deno.land/std@0.207.0/"
+  },
+  "tasks": {
+    "run": "deno run -A  src/main.ts",
+    "test": "deno test src/lib_test.ts"
+  },
+  "lint": {
+    "include": ["src/"],
+    "exclude": [],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "useTabs": true,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "include": ["src/"],
+    "exclude": []
+  },
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"],
+    "strict": true
+  }
+}

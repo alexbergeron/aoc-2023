@@ -1,8 +1,7 @@
 {
 	"imports": {
-		// The dollar sign in front of "std" isn't special - it's an optional
-		// convention to show that $std is an alias set up in an import map
-		"$std/": "https://deno.land/std@0.207.0/"
+		"$std/": "https://deno.land/std@0.207.0/",
+		"$ramda/": "https://deno.land/x/rambda@v8.5.0/"
 	},
 	"tasks": {
 		"day1": "deno run -A  day1/main.ts"

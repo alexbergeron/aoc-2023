@@ -1,8 +1,3 @@
-import Person, { sayHello } from "./lib.ts";
+import { getCalibration } from "./lib.ts";
 
-const ada: Person = {
-	firstName: "Ada",
-	lastName: "Lovelace",
-};
-
-console.log(sayHello(ada));
+console.log(await getCalibration());

@@ -1,10 +1,11 @@
 {
 	"imports": {
 		"$std/": "https://deno.land/std@0.207.0/",
-		"$ramda/": "https://deno.land/x/rambda@v8.5.0/"
+		"$ramda/": "https://deno.land/x/ramda@v0.27.2/"
 	},
 	"tasks": {
-		"day1": "deno run -A  day1/main.ts"
+		"day1": "deno run -A  day1/main.ts",
+		"day2": "deno run -A  day2/main.ts"
 	},
 	"lint": {
 		"rules": {

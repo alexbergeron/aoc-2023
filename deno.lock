@@ -1,5 +1,8 @@
 {
   "version": "3",
+  "redirects": {
+    "https://deno.land/x/set_operations/mod.ts": "https://deno.land/x/set_operations@v1.1.1/mod.ts"
+  },
   "remote": {
     "https://deno.land/std@0.207.0/assert/_constants.ts": "8a9da298c26750b28b326b297316cdde860bc237533b07e1337c021379e6b2a9",
     "https://deno.land/std@0.207.0/assert/_diff.ts": "58e1461cc61d8eb1eacbf2a010932bf6a05b79344b02ca38095f9b805795dc48",
@@ -592,6 +595,8 @@
     "https://deno.land/x/ramda@v0.27.2/source/xprod.js": "ecac5f7263ddad3484c6802097a6d0957b6107ce8e52eea0f27a04be50a16833",
     "https://deno.land/x/ramda@v0.27.2/source/zip.js": "29a04e7dd0a012e391fc595900b4cb0124a13c738f4e6f4489c7173b4a6642dc",
     "https://deno.land/x/ramda@v0.27.2/source/zipObj.js": "c463fe415ecf647561a12ed9dd3444a0be4dd642e787e156fe8caf7fee0ce4ca",
-    "https://deno.land/x/ramda@v0.27.2/source/zipWith.js": "2081388ae101a01f60589f0a74b7a8e75fdc7a6416c224673f197633750041ec"
+    "https://deno.land/x/ramda@v0.27.2/source/zipWith.js": "2081388ae101a01f60589f0a74b7a8e75fdc7a6416c224673f197633750041ec",
+    "https://deno.land/x/set_operations@v1.1.1/mod.ts": "218f43b18435762dc256cc4ec14baebb0902663b29c5110415bcb95bf0b3aee2",
+    "https://deno.land/x/set_operations@v1.1.1/set_operations.ts": "47c9ff60a31f3671fb9943e51dbb21fa85a50b659de52c8fde80c9396d612151"
   }
 }

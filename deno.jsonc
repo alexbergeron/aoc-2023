@@ -6,7 +6,8 @@
 	"tasks": {
 		"day1": "deno run -A  day1/main.ts",
 		"day2": "deno run -A  day2/main.ts",
-		"day3": "deno run -A  day3/main.ts"
+		"day3": "deno run -A  day3/main.ts",
+		"day5": "deno run -A  day5/main.ts"
 	},
 	"lint": {
 		"rules": {

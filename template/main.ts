@@ -1,8 +1,16 @@
-import Person, { sayHello } from "./lib.ts";
+// Not doing lib again
 
-const ada: Person = {
-	firstName: "Ada",
-	lastName: "Lovelace",
-};
+import { assert } from "$std/assert/assert.ts";
 
-console.log(sayHello(ada));
+function readInput(file: string): Promise<string> {
+	return Deno.readTextFile(`./day1/${file}`);
+}
+
+async function run(inputPath: string): Promise<number> {
+	const input = await readInput(inputPath);
+	return input.length;
+}
+const test = await run("test");
+assert(test == 0, `${test} != 0`);
+const result = await run("input");
+console.log(result);

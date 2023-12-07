@@ -8,7 +8,8 @@
 		"day2": "deno run -A  day2/main.ts",
 		"day3": "deno run -A  day3/main.ts",
 		"day5": "deno run -A  day5/main.ts",
-		"day6": "deno run -A  day6/main.ts"
+		"day6": "deno run -A  day6/main.ts",
+		"day7": "deno run -A  day7/main.ts"
 	},
 	"lint": {
 		"rules": {

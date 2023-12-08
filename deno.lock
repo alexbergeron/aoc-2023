@@ -35,7 +35,10 @@
     "https://deno.land/std@0.207.0/assert/mod.ts": "37c49a26aae2b254bbe25723434dc28cd7532e444cf0b481a97c045d110ec085",
     "https://deno.land/std@0.207.0/assert/unimplemented.ts": "d56fbeecb1f108331a380f72e3e010a1f161baa6956fd0f7cf3e095ae1a4c75a",
     "https://deno.land/std@0.207.0/assert/unreachable.ts": "4600dc0baf7d9c15a7f7d234f00c23bca8f3eba8b140286aaca7aa998cf9a536",
+    "https://deno.land/std@0.207.0/async/delay.ts": "a6142eb44cdd856b645086af2b811b1fcce08ec06bb7d50969e6a872ee9b8659",
     "https://deno.land/std@0.207.0/fmt/colors.ts": "34b3f77432925eb72cf0bfb351616949746768620b8e5ead66da532f93d10ba2",
+    "https://deno.land/x/immutable@4.0.0-rc.14-deno/mod.ts": "3ef2df7fdb989775d5ecbf4e2cfc8c358b04cbf4606ecc0e13878d241974977f",
+    "https://deno.land/x/immutable@4.0.0-rc.14-deno/node_modules/immutable/dist/immutable.es.js": "ce6b865d13323bdec6e3d4343485f92e53de681a0f38dffb6cce217aa00a3f75",
     "https://deno.land/x/rambda@v8.5.0/mod.ts": "1156610626e116698c01af4f025dc22d6e590d21b5838e17fcb5cefeb1554151",
     "https://deno.land/x/rambda@v8.5.0/rambda.js": "00baacb87c7d898b20dc87e725c26b5017f3065fe94056f73181699d0f4b886f",
     "https://deno.land/x/rambda@v8.5.0/src/F.js": "b348efe8aff336875af8ee27c5ce33c26b180d6db82daba15074c62cccef5a71",
@@ -597,6 +600,13 @@
     "https://deno.land/x/ramda@v0.27.2/source/zipObj.js": "c463fe415ecf647561a12ed9dd3444a0be4dd642e787e156fe8caf7fee0ce4ca",
     "https://deno.land/x/ramda@v0.27.2/source/zipWith.js": "2081388ae101a01f60589f0a74b7a8e75fdc7a6416c224673f197633750041ec",
     "https://deno.land/x/set_operations@v1.1.1/mod.ts": "218f43b18435762dc256cc4ec14baebb0902663b29c5110415bcb95bf0b3aee2",
-    "https://deno.land/x/set_operations@v1.1.1/set_operations.ts": "47c9ff60a31f3671fb9943e51dbb21fa85a50b659de52c8fde80c9396d612151"
+    "https://deno.land/x/set_operations@v1.1.1/set_operations.ts": "47c9ff60a31f3671fb9943e51dbb21fa85a50b659de52c8fde80c9396d612151",
+    "https://deno.land/x/tiny_math@0.1.4/mod.ts": "e1d2c9adf6104b91b54801d3cffdd4e79bf5447dc04dbe4c7e85702373622bb9",
+    "https://deno.land/x/tiny_math@0.1.4/src/combinatorics.ts": "16b5af11b6d1f208777d14ce79684bb07b836909d2ab6b6ac83e006dabf29563",
+    "https://deno.land/x/tiny_math@0.1.4/src/factorial.ts": "57f90d6a4e8c22ec657196e361a1ab7d252e871f22b9590e41ff6d666b6e7bf6",
+    "https://deno.land/x/tiny_math@0.1.4/src/gamma.ts": "cdd91838fcae8937ee5dacdfc0c0e9b0ac40e4b0209988766245a4efee447b2c",
+    "https://deno.land/x/tiny_math@0.1.4/src/gcd_lcm.ts": "63dec11d82bb9e942aef6709ff9bc7df87baf2c16d8c96aed42aead98fd0043b",
+    "https://deno.land/x/tiny_math@0.1.4/src/prime.ts": "6dd1ab37ae702a3083bdbfec3ea162d098f9d4e5777a6a3b4ceb1da7c9fe9367",
+    "https://deno.land/x/tiny_math@0.1.4/src/utils.ts": "c94f3ed0f84ee524c62d5f7d33a53498ccd24fa52c8005e5ab099e40642633f3"
   }
 }

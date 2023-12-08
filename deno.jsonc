@@ -1,15 +1,19 @@
 {
 	"imports": {
 		"$std/": "https://deno.land/std@0.207.0/",
-		"$ramda/": "https://deno.land/x/ramda@v0.27.2/"
+		"$ramda/": "https://deno.land/x/ramda@v0.27.2/",
+		"$immutable/": "https://deno.land/x/immutable@4.0.0-rc.14-deno/",
+		"$math/": "https://deno.land/x/tiny_math@0.1.4/"
 	},
 	"tasks": {
-		"day1": "deno run -A  day1/main.ts",
-		"day2": "deno run -A  day2/main.ts",
-		"day3": "deno run -A  day3/main.ts",
-		"day5": "deno run -A  day5/main.ts",
-		"day6": "deno run -A  day6/main.ts",
-		"day7": "deno run -A  day7/main.ts"
+		"day1": "deno run -A day1/main.ts",
+		"day2": "deno run -A day2/main.ts",
+		"day3": "deno run -A day3/main.ts",
+		"day5": "deno run -A day5/main.ts",
+		"day6": "deno run -A day6/main.ts",
+		"day7": "deno run -A day7/main.ts",
+		"day8": "deno run -A day8/main.ts",
+		"day8b": "deno run -A day8/main_worker.ts"
 	},
 	"lint": {
 		"rules": {

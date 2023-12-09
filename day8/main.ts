@@ -66,8 +66,8 @@ async function navigateEndsWith(key: string, steps: number, input: Input): Promi
 		await delay(2); // Defer execution
 	}
 
-	const node =  input.nodes.get(key);
-	assert(node)
+	const node = input.nodes.get(key);
+	assert(node);
 	const stepKey = steps % input.instructions.size;
 	const instruction = input.instructions.get(stepKey);
 
@@ -90,7 +90,7 @@ async function run2(inputPath: string): Promise<number> {
 	const input = await readInput(inputPath);
 	const parsed = parseInput(input);
 	const startNodes = parsed.nodes.keySeq().filter((k) => k.endsWith("A"));
-	const results = await Promise.all(startNodes.toArray().map((sn) => navigateEndsWith(sn, 0, parsed)))
+	const results = await Promise.all(startNodes.toArray().map((sn) => navigateEndsWith(sn, 0, parsed)));
 	return R.reduce(lcm, results[0], results.slice(1));
 }
 

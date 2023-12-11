@@ -9,13 +9,15 @@
 		"day1": "deno run -A day1/main.ts",
 		"day2": "deno run -A day2/main.ts",
 		"day3": "deno run -A day3/main.ts",
+		"day4": "python3 day4/main.py",
 		"day5": "deno run -A day5/main.ts",
 		"day6": "deno run -A day6/main.ts",
 		"day7": "deno run -A day7/main.ts",
 		"day8": "deno run -A day8/main.ts",
 		"day8b": "deno run -A day8/main_worker.ts",
 		"day9": "deno run -A day9/main.ts",
-		"day10": "deno run -A day10/main.ts"
+		"day10": "deno run -A day10/main.ts",
+		"day11": "deno run -A day11/main.ts"
 	},
 	"lint": {
 		"rules": {

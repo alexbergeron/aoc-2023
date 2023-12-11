@@ -14,14 +14,14 @@ async function readInput(file: string): Promise<string[][]> {
 function expandUniverse(universe: string[][]): string[][] {
 	const emptyColumnIndexes = universe.map(findEmptyColumns);
 	const emptyColumns: Set<number> = Set(R.reduce(R.intersection, emptyColumnIndexes[0], emptyColumnIndexes));
-	const duplicateOnRows = (row: string[]) => {
-		const updatedRow = R.addIndex(R.chain)(
-			(val: string, idx: number) => emptyColumns.contains(idx) ? [val, val] : [val],
+	const updateRow = (row: string[]) => {
+		const updatedRow = R.addIndex(R.map)(
+			(val: string, idx: number) => emptyColumns.contains(idx) ? "@" : val,
 			row,
 		);
-		return R.all(R.equals("."))(updatedRow) ? [updatedRow, updatedRow] : [updatedRow];
+		return R.any(R.equals("#"))(updatedRow) ? updatedRow : updatedRow.fill("!");
 	};
-	return R.chain(duplicateOnRows, universe);
+	return R.map(updateRow, universe);
 }
 
 function findEmptyColumns(row: string[]): number[] {
@@ -34,13 +34,21 @@ function findEmptyColumns(row: string[]): number[] {
 	return R.addIndex(R.reduce)(inner, [], row);
 }
 
-function findAllGalaxies(universe: string[][]): Position[] {
+function findAllGalaxies(universe: string[][], expansion: number): Position[] {
 	const galaxies: Position[] = [];
+	let realRow = 0;
 	for (let row = 0; row < universe.length; row++) {
-		for (let col = 0; col < universe[row].length; col++) {
-			if (universe[row][col] == "#") {
-				galaxies.push([row, col]);
+		if (universe[row][0] == "!") {
+			realRow += expansion;
+		} else {
+			let realCol = 0;
+			for (let col = 0; col < universe[row].length; col++) {
+				if (universe[row][col] == "#") {
+					galaxies.push([realRow, realCol]);
+				}
+				realCol += universe[row][col] == "@" ? expansion : 1;
 			}
+			realRow += 1;
 		}
 	}
 
@@ -66,7 +74,7 @@ function findDistance(pos1: Position, pos2: Position): number {
 async function run(inputPath: string, expansion: number): Promise<number> {
 	const universe = await readInput(inputPath);
 	const expanded = expandUniverse(universe);
-	const galaxies = findAllGalaxies(expanded);
+	const galaxies = findAllGalaxies(expanded, expansion);
 	const galaxyPairs = allGalaxyPairs(galaxies);
 	const distances = R.map(([p1, p2]: [Position, Position]) => findDistance(p1, p2), galaxyPairs);
 	return R.reduce(R.add, 0, distances);
@@ -76,6 +84,7 @@ const test = await run("test", 2);
 assert(test == 374, `${test} != 374`);
 const result = await run("input", 2);
 console.log(result);
+assert(result == 9965032, `${result} != 9965032`);
 
 const test2 = await run("test", 10);
 assert(test2 == 1030, `${test2} != 1030`);

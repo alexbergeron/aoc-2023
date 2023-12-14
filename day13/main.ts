@@ -42,7 +42,6 @@ function findMirror(grid: Grid, old?: number): number {
 	return 100 * horizontal + vertical;
 }
 
-
 function findMirrorHorizontal(grid: Grid, old?: number): number {
 	for (let i = 1; i < grid.size; i++) {
 		const sliceTop = grid.slice(0, i).reverse();

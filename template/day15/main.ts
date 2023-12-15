@@ -15,6 +15,6 @@ async function run1(inputPath: string): Promise<number> {
 const expected1 = 0;
 const test1 = await run1("test");
 assert(test1 == expected1, `${test1} != ${expected1}`);
-console.log("OK")
+console.log("OK");
 const result1 = await run1("input");
 console.log(result1);

@@ -2,7 +2,7 @@
 import math
 import re
 
-with open('input') as f:
+with open('day4/input') as f:
     lines = f.readlines()
 
 def evaluate1(line):
@@ -28,7 +28,6 @@ def evaluate(line):
 
 idx = 0
 def score(nb_cards, current):
-    k
     idx += 1
     return nb_cards
 

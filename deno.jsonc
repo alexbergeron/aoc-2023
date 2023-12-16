@@ -21,7 +21,8 @@
 		"day12": "deno run -A day12/main.ts",
 		"day13": "deno run -A day13/main.ts",
 		"day14": "deno run -A day14/main.ts",
-		"day15": "deno run -A day15/main.ts"
+		"day15": "deno run -A day15/main.ts",
+		"day16": "deno run -A day16/main.ts"
 	},
 	"lint": {
 		"rules": {
